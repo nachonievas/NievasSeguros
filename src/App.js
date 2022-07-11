@@ -1,19 +1,23 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Home } from "./views";
-
-const routes = [{ path: "/", component: Home }];
+import { Route, Routes } from "react-router-dom";
+import routes from "./utils/routes";
 
 const App = () => {
   return (
-    <Router>
-      <div>
+    <div className="app">
+      {/* <Navbar /> */}
+      <Routes>
         {routes.map((route, index) => (
-          <Route key={index} path={route.path} component={route.component} />
+          <Route
+            key={index}
+            path={route.path}
+            element={route.component()}
+            exact
+          />
         ))}
-      </div>
-    </Router>
+      </Routes>
+    </div>
   );
 };
 
