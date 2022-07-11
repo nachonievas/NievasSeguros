@@ -1,12 +1,20 @@
+import React from "react";
 import "./App.css";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Home } from "./views";
 
-function App() {
+const routes = [{ path: "/", component: Home }];
+
+const App = () => {
   return (
-    <>
-      <div className="text-hola text-margin"> HOLA 1</div>
-      <div className="text-hola"> HOLA 2</div>
-    </>
+    <Router>
+      <div>
+        {routes.map((route, index) => (
+          <Route key={index} path={route.path} component={route.component} />
+        ))}
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
