@@ -10,7 +10,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  background-color: #fff;
+  background-color: var(--color-primary);
 }
 
 #root {
@@ -69,6 +69,13 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
+.full-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .section__padding {
   padding: 4rem 6rem;
 }
@@ -120,14 +127,4 @@ a {
   .section__margin {
     margin: 4rem 2rem;
   }
-}
-
-.text-hola {
-  background-color: red;
-  padding: 20px;
-  border: 4px solid black;
-}
-
-.text-margin {
-  margin-right: 20px;
 }
