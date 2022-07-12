@@ -10,7 +10,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  background-color: #fff;
+  background-color: var(--color-primary);
 }
 
 #root {
@@ -67,6 +67,13 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.full-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section__padding {
