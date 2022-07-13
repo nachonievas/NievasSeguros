@@ -2,11 +2,12 @@ import React from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import routes from "./utils/routes";
+import { Navbar } from "./components";
 
 const App = () => {
   return (
     <div className="app">
-      {/* <Navbar /> */}
+      <Navbar />
       <Routes>
         {routes.map((route, index) => (
           <Route
