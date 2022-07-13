@@ -2,14 +2,9 @@
   position: relative;
 }
 
-.header__city {
+.header__car-content {
   width: 100vw;
-  z-index: -1;
-  height: 77vh;
-  background-repeat: repeat;
-  background-position: 0 0;
-  background-size: auto 100%;
-  animation: animatedCity 20s linear infinite;
+  height: 150px;
 }
 
 .header__car {
@@ -19,7 +14,7 @@
   z-index: 999;
   width: 200px;
   height: 70px;
-  bottom: 20px;
+  bottom: 0px;
   left: 30px;
   position: absolute;
 }
@@ -62,14 +57,5 @@
   }
   to {
     left: 100%;
-  }
-}
-
-@keyframes animatedCity {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 0;
   }
 }

@@ -10,7 +10,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  background-color: var(--color-primary);
+  background-color: rgb(209, 93, 92, 0.3);
 }
 
 #root {
@@ -27,38 +27,46 @@ a {
 
 .gradient__bg {
   /* ff 3.6+ */
-  background: -moz-radial-gradient(
-    circle at 3% 25%,
-    rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
+  background: -moz-linear-gradient(
+    180deg,
+    var(--color-highlight) 0%,
+    var(--color-highlight) 52%,
+    var(--color-primary) 100%
   );
 
   /* safari 5.1+,chrome 10+ */
-  background: -webkit-radial-gradient(
-    circle at 3% 25%,
-    rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
+  background: -webkit-linear-gradient(
+    180deg,
+    var(--color-highlight) 0%,
+    var(--color-highlight) 52%,
+    var(--color-primary) 100%
   );
 
   /* opera 11.10+ */
-  background: -o-radial-gradient(
-    circle at 3% 25%,
-    rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
+  background: -o-linear-gradient(
+    180deg,
+    var(--color-highlight) 0%,
+    var(--color-highlight) 52%,
+    var(--color-primary) 100%
   );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F4C1C1', endColorstr='#98180D', GradientType=1 );
 
   /* ie 10+ */
-  background: -ms-radial-gradient(
-    circle at 3% 25%,
-    rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
+  background: -ms-linear-gradient(
+    180deg,
+    var(--color-highlight) 0%,
+    var(--color-highlight) 52%,
+    var(--color-primary) 100%
   );
 
-  /* global 92%+ browsers support */
-  background: radial-gradient(
-    circle at 3% 25%,
-    rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    180deg,
+    var(--color-highlight) 0%,
+    var(--color-highlight) 52%,
+    var(--color-primary) 100%
   );
 }
 
