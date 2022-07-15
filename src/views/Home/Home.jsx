@@ -1,6 +1,6 @@
 import React from "react";
-import { Header } from "../../components";
+import { PresentationSection } from "../../components";
 
 export const Home = () => {
-  return <Header />;
+  return <PresentationSection />;
 };

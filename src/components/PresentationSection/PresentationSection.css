@@ -1,13 +1,13 @@
-.header {
+.presentation-section {
   position: relative;
 }
 
-.header__car-content {
+.presentation-section__car-content {
   width: 100vw;
   height: 150px;
 }
 
-.header__car {
+.presentation-section__car {
   animation: move 10s linear infinite;
   -moz-animation: move 10s linear infinite;
   -webkit-animation: move 10s linear infinite;
@@ -19,25 +19,25 @@
   position: absolute;
 }
 
-.header__car-img {
+.presentation-section__car-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.header__wheel-img {
+.presentation-section__wheel-img {
   animation: rotation 1s infinite linear;
   position: absolute;
   width: 30px;
   height: 30px;
 }
 
-.header__wheel-img-left {
+.presentation-section__wheel-img-left {
   left: 20px;
   bottom: 0;
 }
 
-.header__wheel-img-right {
+.presentation-section__wheel-img-right {
   right: 27px;
   bottom: 0;
 }
