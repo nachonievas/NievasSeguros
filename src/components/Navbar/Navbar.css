@@ -4,12 +4,15 @@
   box-sizing: border-box;
   font-family: var(--font-family);
 }
+.navbar_logo {
+  height: 100%;
+}
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  padding: 0 2rem;
+  padding: 0 0.5rem;
   background-color: var(--color-primary);
   color: var(--color-text-primary);
 }
