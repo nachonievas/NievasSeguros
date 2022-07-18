@@ -9,9 +9,9 @@
 }
 
 .presentation-section__car {
-  animation: move 10s linear 1;
-  -moz-animation: move 10s linear infinite;
-  -webkit-animation: move 10s linear infinite;
+  animation: move 10s linear forwards;
+  -moz-animation: move 10s linear forwards;
+  -webkit-animation: move 10s linear forwards;
   z-index: 999;
   width: 250px;
   height: 80px;
@@ -53,13 +53,14 @@
 
 .presentation-section__title-content {
   align-self: flex-end;
-  margin-right: 50px;
-  width: 245px;
+  margin-right: 30%;
+  width: 300px;
 }
 
 .presentation-section__title {
   font-family: "Cocogoose";
-  font-size: 4.2rem;
+  font-weight: 100;
+  font-size: 5rem;
   color: white;
   text-align: center;
   width: 0;
@@ -68,9 +69,9 @@
 }
 
 .reveal-left {
-  animation: reveal-left 2s linear 1;
-  -moz-animation: reveal-left 2s linear 1;
-  -webkit-animation: reveal-left 2s linear 1;
+  animation: reveal-left 1.5s linear 1;
+  -moz-animation: reveal-left 1.5s linear 1;
+  -webkit-animation: reveal-left 1.5s linear 1;
   animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
@@ -86,11 +87,16 @@
 }
 
 @keyframes move {
-  from {
+  1% {
     left: -25%;
   }
-  to {
-    left: 100%;
+  99% {
+    opacity: 1;
+  }
+  100% {
+    left: 120%;
+    opacity: 0;
+    display: none;
   }
 }
 
