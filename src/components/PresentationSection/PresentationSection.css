@@ -1,22 +1,31 @@
 .presentation-section {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .presentation-section__car-content {
   width: 100vw;
-  height: 150px;
 }
 
 .presentation-section__car {
-  animation: move 10s linear infinite;
+  animation: move 10s linear 1;
   -moz-animation: move 10s linear infinite;
   -webkit-animation: move 10s linear infinite;
   z-index: 999;
-  width: 200px;
-  height: 70px;
+  width: 250px;
+  height: 80px;
   bottom: 0px;
   left: 30px;
   position: absolute;
+}
+
+.presentation-section__umbrella-img {
+  width: 390px;
+  height: 125px;
+  position: absolute;
+  top: -78px;
+  left: -68px;
 }
 
 .presentation-section__car-img {
@@ -26,20 +35,45 @@
 }
 
 .presentation-section__wheel-img {
-  animation: rotation 1s infinite linear;
+  animation: rotation 1.5s infinite linear;
   position: absolute;
   width: 30px;
   height: 30px;
 }
 
 .presentation-section__wheel-img-left {
-  left: 20px;
-  bottom: 0;
+  left: 30px;
+  bottom: 3px;
 }
 
 .presentation-section__wheel-img-right {
-  right: 27px;
-  bottom: 0;
+  right: 38px;
+  bottom: 3px;
+}
+
+.presentation-section__title-content {
+  align-self: flex-end;
+  margin-right: 50px;
+  width: 245px;
+}
+
+.presentation-section__title {
+  font-family: "Cocogoose";
+  font-size: 4.2rem;
+  color: white;
+  text-align: center;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.reveal-left {
+  animation: reveal-left 2s linear 1;
+  -moz-animation: reveal-left 2s linear 1;
+  -webkit-animation: reveal-left 2s linear 1;
+  animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
 }
 
 @keyframes rotation {
@@ -57,5 +91,14 @@
   }
   to {
     left: 100%;
+  }
+}
+
+@keyframes reveal-left {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
