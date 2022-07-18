@@ -11,3 +11,10 @@
   --color-text-primary: #fff;
   --color-text-secondary: #f4c1c1;
 }
+
+@font-face {
+  font-family: "Cocogoose";
+  src: local("Cocogoose"),
+    url("./assets/fonts/Cocogoose.ttf") format("truetype");
+  font-weight: medium;
+}
