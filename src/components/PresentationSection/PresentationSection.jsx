@@ -63,9 +63,16 @@ export const PresentationSection = () => {
           </div>
         </div>
         <div className="presentation-section__title-content">
-          <h1 ref={titleRef} className="presentation-section__title" id="title">
+          <h1
+            ref={titleRef}
+            className="presentation-section__title text-shadow"
+            id="title"
+          >
             <p>GRUPO</p>
             <p>NIEVAS</p>
+            <p className="presentation-section__subtitle">
+              Agencia Digital de Seguros
+            </p>
           </h1>
         </div>
       </div>
