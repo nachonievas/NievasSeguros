@@ -1,13 +1,27 @@
 import React from "react";
 import "./ContactFormSection.css";
-import carSrc from "../../assets/images/carAnimation/car.png";
-import wheelSrc from "../../assets/images/carAnimation/wheel.png";
-import umbrellaSrc from "../../assets/images/carAnimation/umbrella.png";
 
 export const ContactFormSection = () => {
   return (
-    <section className="full-section">
-      <div className="contact-form-section"></div>
+    <section className="full-section contact-form-section">
+      <h1>Contáctanos</h1>
+      <form className="contact-form-section__form">
+        <div className="contact-form-section__form-input-container">
+          <label htmlFor="name">Nombre</label>
+          <input type="text" id="name" />
+        </div>
+        <div className="contact-form-section__form-input-container">
+          <label htmlFor="email">Email</label>
+          <input type="email" id="email" />
+        </div>
+        <div className="contact-form-section__form-input-container">
+          <label htmlFor="message">Mensaje</label>
+          <textarea id="message" />
+        </div>
+        <div className="contact-form-section__form-input-container">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
     </section>
   );
 };
